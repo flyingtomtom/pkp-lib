@@ -218,6 +218,51 @@ class PKPAuthor extends Identity {
 		$userGroup = $this->getUserGroup();
 		return $userGroup->getLocalizedName();
 	}
+
+	//Specific CIRAD
+	/**
+	 * Get CIRADInitial
+	 * @return string
+	 */
+	function getCIRADInitial() {
+	    
+	    $initial = null;
+	    
+	    if ($this->getLocalizedGivenName()){
+	        $givenname=$this->getLocalizedGivenName();
+	        $initial= $givenname[0];
+	        
+	        if ( strlen( $givenname)< 2 ){
+	            $initial .=".";
+	        }else{
+	            
+	        for ($i = 1; $i < strlen( $givenname) - 1 ; $i++) {
+	            if ( (  $givenname[$i] == "." ) or (  $givenname[$i] == " " ) or (  $givenname[$i] == "-" ))
+	            {
+	                if ( (  $givenname[$i+1] == "." ) or (  $givenname[$i+1] == " " ) or (  $givenname[$i+1] == "-" ))
+	                {
+	                     //do nothing
+	                    
+	                }else{
+	                   
+	                    {
+	                        $initial .=".";
+	                        $initial .=$givenname[$i+1];
+	                    }
+	                }
+	            }
+                
+	            
+	        }
+	        $initial .=".";
+	        }
+	    }
+	    
+	   
+	    return $initial;
+	    }
+
+
 }
 
 
