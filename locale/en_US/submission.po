@@ -396,10 +396,10 @@ msgid "submission.authors"
 msgstr "Authors"
 
 msgid "submission.authorBiography"
-msgstr "Author Biography"
+msgstr "Author's Biography
 
 msgid "submission.authorBiographies"
-msgstr "Author Biographies"
+msgstr "Authors' Biographies"
 
 msgid "submission.authorWithAffiliation"
 msgstr "{$name}, {$affiliation}"
