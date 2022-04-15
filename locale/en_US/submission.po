@@ -396,7 +396,7 @@ msgid "submission.authors"
 msgstr "Authors"
 
 msgid "submission.authorBiography"
-msgstr "Author's Biography
+msgstr "Author's Biography"
 
 msgid "submission.authorBiographies"
 msgstr "Authors' Biographies"

@@ -1073,7 +1073,7 @@ msgid "common.queue.long.submissionsArchived"
 msgstr "Sousmissions archivées"
 
 msgid "submission.addFile"
-msgstr "Déposer/Ajouter un fichier"
+msgstr "Déposer\Ajouter un fichier"
 
 msgid "submission.contributors"
 msgstr "Liste des contributeurs"
@@ -1373,7 +1373,7 @@ msgid "submission.submit.copyrightNoticeAgree"
 msgstr "J'accepte et respecterez les termes de la déclaration de copyright."
 
 msgid "submission.authorBiographies"
-msgstr "Bibliographies de l'auteur"
+msgstr "Biographies des auteurs"
 
 msgid "submission.shortAuthor"
 msgstr "{$author} et al."
