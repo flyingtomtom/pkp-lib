@@ -87,6 +87,7 @@ class SubmissionNativeXmlFilter extends NativeExportFilter {
 		$deployment->setSubmission($submission);
 		$submissionNode = $doc->createElementNS($deployment->getNamespace(), $deployment->getSubmissionNodeName());
 
+ 		$submissionNode->setAttribute('locale', $submission->getData('locale')); // https://github.com/pkp/pkp-lib/pull/7201
 		$submissionNode->setAttribute('date_submitted', strftime('%Y-%m-%d', strtotime($submission->getData('dateSubmitted'))));
 		$submissionNode->setAttribute('status', $submission->getData('status'));
 		$submissionNode->setAttribute('submission_progress', $submission->getData('submissionProgress'));

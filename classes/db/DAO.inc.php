@@ -188,7 +188,7 @@ class DAO {
 	 */
 	function datetimeToDB($dt) {
 		if ($dt === null) return 'NULL';
-		if (!ctype_digit($dt)) $dt = strtotime($dt);
+		if (!is_numeric($dt)) $dt = strtotime($dt);
 		return '\'' . date('Y-m-d H:i:s', $dt) . '\'';
 	}
 
